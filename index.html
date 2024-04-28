@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Sandra Rodriguez</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Sandra Jackeline Rodriguez Hernandez. Keyword summary of page content">
+    <meta name="author" content="Sandra Rodriguez">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals- Sandra Rodriguez</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/">LinkedIn Profile</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/james/2?lang=eng">Favorite Scripture</a></li>
+                <li><a href="#">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+        <section class="card">
+            <h2>About me</h2>
+            <div class="content">
+                <p>Hello my name is Sandra J Rodriguez, I'm from Honduras, but I live here in United States since 2022. My daughter who has 10 years old is my motivation to continue studying and both have better future. I like the technology and also I want to become a software engineer. I like to spend time with my daughter and have enough time for my classes too.  </p>
+                <ul>
+                    <li><a href="#"><img src="images/me.jpg" alt="me"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="content">
+                <ul> <!-- Aquí agregué la lista -->
+                    <li><a href="#">Academia X</a></li>
+                    <li><a href="#">MDN Web Docs</a></li>
+                    <li><a href="#">Stack overflow</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Cortez, Honduras</h2>
+            <div class="content">
+                <p>Cortez,is the name of the state where I born in my country Honduras, Honduras have two principals capital cities, one is in Cortez and the other one is in Tegucigalpa. Cortez have the most important industrial port with many container with merchandise from other countries as well from Honduras. My country is one of the principals coffee exporters in the world competing with the Colombian coffee, my country is little but have an amazing beaches and paradise in the middle of the nature</p>
+                <ul>
+                    <li><a href="#"><img src="images/Honduras.jpg" alt="flag"></a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Sandra Rodriguez☀️ Honduras☀️</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = "Last modification: 04/26/2024";
+    </script>
+
+</body>
+</html>
