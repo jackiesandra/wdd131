@@ -53,19 +53,20 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 20px auto;
     display: flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    grid-row: 2;
 }
 
 .card {
     border: 1px solid #ddd;
     width: calc(35.33% - 10px);
     margin-bottom: 20px;
-    transition: width 0.3s; /* Agregamos una transición suave */
+    transition: width 0.3s; 
 }
 
 .card:hover {
-    width: calc(50% - 50px); 
+    width: calc(50% - 50px);
 }
 
 .card:nth-child(1),
@@ -82,12 +83,17 @@ nav ul li a:hover {
 
 .card .content {
     padding: 10px;
-    display: flex;
+    display:contents;
+    flex-direction: column;
 }
 
-.card:nth-child(1) .content img {
+.card:nth-child(1) .content img,
+.card:nth-child(3) .content img {
     margin-right: 10px;
     width: 100%;
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .card p {
@@ -101,11 +107,6 @@ nav ul li a:hover {
 
 .card ul li {
     margin-bottom: 5px;
-}
-
-.card img {
-    width: 120%;
-    height: auto;
 }
 
 footer {
