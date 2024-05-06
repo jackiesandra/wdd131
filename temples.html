@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/temples-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Temples Album</h1>
+        <button class="menu-btn">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <figure>
+            <img src="images/colombiatemple.jpg" alt="Temple 1">
+            <figcaption>Barranquilla Colombia</figcaption>
+        </figure>
+        <figure>
+            <img src="images/englandtemple.jpg" alt="Temple 2">
+            <figcaption>Birmingham England</figcaption>
+        </figure>
+        <figure>
+            <img src="images/Braziltemple.jpg" alt="Temple 3">
+            <figcaption>Belem Brazil 3</figcaption>
+        </figure>
+        <figure>
+            <img src="images/albuquerque.jpg" alt="Temple 4">
+            <figcaption>Albuquerque Mexico</figcaption>
+        </figure>
+        <figure>
+            <img src="images/hondurastemple.jpg" alt="Temple 5">
+            <figcaption>Tegucigalpa Honduras temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/Konatemple.webp" alt="Temple 6">
+            <figcaption>Kona Hawaii</figcaption>
+        </figure>
+        <figure>
+            <img src="images/indianapolistemple.webp" alt="Temple 7">
+            <figcaption>Indianapolis Indiana USA</figcaption>
+        </figure>
+        <figure>
+            <img src="images/ohiotemple.jpg" alt="Temple 8">
+            <figcaption>Ohio USA</figcaption>
+        </figure>
+        <figure>
+            <img src="images/Alabamatemple.jpg" alt="Temple 9">
+            <figcaption>Birmingham Alabama USA</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> ☀️Sandra Jackeline Rodriguez Hernandez☀️Honduras</p>
+        <p id="lastModified"></p>
+        <script>
+          document.getElementById("copyright-year").textContent = new Date().getFullYear();
+          document.getElementById('lastModified').textContent = "Last modification: " + new Date(document.lastModified).toLocaleString();
+        </script>
+    </footer>
+
+</body>
+</html>
