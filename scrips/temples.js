@@ -5,5 +5,5 @@ document.addEventListener('DOMContentLoaded', function() {
     menuBtn.addEventListener('click', function() {
       nav.classList.toggle('open');
     });
-  });
+});
   

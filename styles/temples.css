@@ -5,16 +5,22 @@ body {
 }
 
 header {
-  background-color: hwb(170 24% 33%);
+  background-color: rgb(49, 109, 194);
   color: #fff;
   padding: 1rem;
   text-align: center;
   position: relative;
 }
 
+h1 {
+color: hsl(51, 62%, 53%);
+
+}
+
 h2 {
   text-align: center;
   margin-left: 150%;
+  color:hsl(51, 62%, 53%);
 }
 
 nav ul {
@@ -22,7 +28,7 @@ nav ul {
   padding: 0;
   text-align: center;
   display: flex;
-  justify-content: center; /* Centrar elementos en la navegación */
+  justify-content: center;
 }
 
 nav ul li {
@@ -57,10 +63,10 @@ figcaption {
 }
 
 footer {
-  background-color: hwb(170 24% 33%);
   color: #fff;
   text-align: center;
   padding: 1rem;
+  background-color: rgb(49, 109, 194);
 }
 
 /* Media query para dispositivos móviles */
