@@ -1,0 +1,70 @@
+/* Estilos para pantallas más grandes */
+
+/* Container */
+.container {
+    position: relative;
+}
+
+/* Imagen principal */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contenedor de datos */
+.data-container {
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: fit-content;
+    padding: 20px;
+}
+
+/* Contenedor del clima */
+.weather-container {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: fit-content;
+    margin-left: 85%;
+    margin-bottom: 10%;
+    padding: 20px;
+}
+
+/* Encabezados */
+h2, h3 {
+    background-color: rgb(34, 143, 220); /* Color de fondo de los encabezados */
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+h1 {
+    background-color:rgb(34, 143, 220); /* Color de fondo del encabezado principal */
+    color: hsl(0, 0%, 0%); /* Color del texto del encabezado principal */
+    text-align: center;
+    width:100%;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Pie de página */
+footer {
+    background-color:rgb(34, 143, 220); /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Contenedor del pie de página */
+.footer-container {
+    border-top: 5px solid white;
+    border-bottom: 5px solid #001f3f;
+}
