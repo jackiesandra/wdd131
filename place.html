@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honduras</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" media="(min-width: 768px)" href="styles/place-large.css">
+</head>
+<body>
+<div class="container">
+    <h1>Honduras</h1>
+    <picture>
+        <source srcset="images/guacamaya.webp" type="image/webp">
+        <img src="images/guacamaya.jpg" alt="principal image">
+    </picture>
+
+    <div class="data-container">
+        <h2>Data</h2>
+        <ul class="data-list">
+            <li>Area: 112,777 km²</li>
+            <li>Population: 10,445,395</li>
+            <li>Capital: Tegucigalpa</li>
+            <li>Language: Español</li>
+            <li>Currency: Lempira</li>
+            <li>TimeZone: UTC-6</li>
+            <li>Calling Code: 504</li>
+            <li>Internet TLD: .hn</li>
+        </ul>
+    </div>
+
+    <div class="weather-container">
+        <h3>Weather ⛅</h3>
+        <ul class="weather-list">
+            <li>Temperature:40 °C</li>
+            <li>Conditions:Partly sunny</li>
+            <li>Wind:SE 5 mph</li>
+            <li>Wind Chill:5 mph</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        &copy; <span id="currentyear"></span> ☀️Sandra Jackeline Rodriguez☀️Honduras
+        <p id="lastModified"></p>
+    </div>
+</footer>
+
+<script src="scripts/place.js" defer></script>
+<script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = "Last modification: 05/09/2024 10:10 AM";
+</script>
+</body>
+</html>
