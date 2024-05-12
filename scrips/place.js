@@ -1,24 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Define static variables for temperature and wind speed
-    var temperature = 40; // °C
-    var windSpeed = 5; // mph
+// Function to calculate wind chill
+function calculateWindChill(temperature, windSpeed) {
+    return 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16));
+}
+
+// Display wind chill when the page loads
+window.onload = function() {
+
+    var temperature = 40; 
+    var windSpeed = 5; 
 
     // Calculate wind chill
     var windChill = calculateWindChill(temperature, windSpeed);
 
-    // Display wind chill on the page
     var weatherList = document.querySelector('.weather-list');
     var windChillItem = document.createElement('li');
-    windChillItem.textContent = 'Wind Chill: ' + windChill + ' °C';
+    windChillItem.textContent = 'Wind Chill: ' + windChill.toFixed(2) + ' °C';
     weatherList.appendChild(windChillItem);
-});
 
-// Function to calculate wind chill
-function calculateWindChill(temperature, windSpeed) {
-    var windChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
-    return Math.round(windChill * 10) / 10;
-}
-
-// Display current year and last modified date in the footer
-document.getElementById('currentyear').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = "Last modification: 05/09/2024 10:10 AM";
+    // Display current year and last modified date
+    var currentYear = new Date().getFullYear();
+    var lastModifiedDate = document.lastModified;
+    var currentYearElement = document.getElementById('currentyear');
+    var lastModifiedElement = document.getElementById('lastModified');
+    if (currentYearElement) {
+        currentYearElement.textContent = currentYear;
+    }
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = "Last modification: " + lastModifiedDate;
+    }
+};

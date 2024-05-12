@@ -4,20 +4,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Color de fondo */
+    background-color: #f0f0f0; 
 }
 
 .container {
     position: relative;
     width: 100%;
-    height: 100vh; /* La imagen ocupa toda la pantalla */
-    overflow: hidden; /* Para que la imagen no se desborde */
+    height: 100vh; 
+    overflow: hidden;
 }
 
 img {
     width: 100%;
-    height: 100%; /* La imagen ocupa toda la altura del contenedor */
-    object-fit: cover; /* Escalar la imagen para que llene el contenedor manteniendo su relación de aspecto */
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -33,6 +33,7 @@ img {
 .data-container {
     top: 0;
     left: 0;
+    margin-top: 5%;
 }
 
 .weather-container {
@@ -42,10 +43,14 @@ img {
 
 h1, h2, h3 {
     text-align: center;
-    background-color: rgb(34, 143, 220); /* Color de fondo de los encabezados */
-    color: #000; /* Color del texto de los encabezados */
+    background-color: rgb(34, 143, 220); 
+    color: #000; 
     margin: 0;
     padding: 10px;
+}
+
+h1 {
+    background-color: rgb(34, 143, 220);
 }
 
 ul {
@@ -54,8 +59,7 @@ ul {
 }
 
 footer {
-    background-color: rgb(34, 143, 220); /* Color de fondo del pie de página */
-    color: white; /* Color del texto del pie de página */
+    background-color: rgb(34, 143, 220);
     text-align: center;
     padding: 10px 0;
 }
@@ -63,4 +67,32 @@ footer {
 .footer-container {
     border-top: 5px solid white;
     border-bottom: 5px solid #001f3f;
+}
+
+/* Responsive design */
+
+@media (min-width: 768px) {
+    .data-container,
+    .weather-container {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .data-container {
+        top: 10%;
+        left: 5%;
+    }
+
+    .weather-container {
+        bottom: 10%;
+        right: 5%;
+    }
+
+    .weather-container::after {
+        display: block;
+        font-size: 2em;
+        text-align: center;
+    }
 }

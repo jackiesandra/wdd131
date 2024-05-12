@@ -1,18 +1,13 @@
-/* Estilos para pantallas más grandes */
-
-/* Container */
 .container {
     position: relative;
 }
 
-/* Imagen principal */
 img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* Contenedor de datos */
 .data-container {
     position: absolute;
     top: 0;
@@ -21,7 +16,6 @@ img {
     padding: 20px;
 }
 
-/* Contenedor del clima */
 .weather-container {
     position: absolute;
     bottom: 0;
@@ -32,39 +26,50 @@ img {
     padding: 20px;
 }
 
-/* Encabezados */
+
 h2, h3 {
-    background-color: rgb(34, 143, 220); /* Color de fondo de los encabezados */
+    background-color: rgb(34, 143, 220); /* Background color for headings */
     text-align: center;
     padding: 10px;
     margin: 0;
 }
 
 h1 {
-    background-color:rgb(34, 143, 220); /* Color de fondo del encabezado principal */
-    color: hsl(0, 0%, 0%); /* Color del texto del encabezado principal */
+    background-color: rgb(34, 143, 220); 
+    color: hsl(0, 0%, 0%); 
     text-align: center;
     width:100%;
     padding: 10px;
     margin: 0;
 }
 
-/* Listas */
+/* Lists */
 ul {
     list-style: none;
     padding: 0;
 }
 
-/* Pie de página */
+/* Footer */
 footer {
-    background-color:rgb(34, 143, 220); /* Color de fondo del pie de página */
-    color: white; /* Color del texto del pie de página */
+    background-color: rgb(34, 143, 220); 
+    color: white; 
     text-align: center;
     padding: 10px 0;
 }
 
-/* Contenedor del pie de página */
+
 .footer-container {
     border-top: 5px solid white;
     border-bottom: 5px solid #001f3f;
+}
+
+/* Specific styles for desktop view */
+@media (min-width: 768px) {
+    .weather-icon {
+        display: none; /* Hide weather icon in desktop view */
+    }
+
+    .weather-text {
+        display: inline; /* Show weather text in desktop view */
+    }
 }
