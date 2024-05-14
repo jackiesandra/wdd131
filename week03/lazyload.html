@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Images</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Images</h1>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="images/perrito1.jpg" data-src="images/perrito1.jpg" alt="Image 1">
+            <img src="images/perrito2.jpg" data-src="images/perrito2.jpg" alt="Image 2">
+            <img src="images/perritos3.jpg" data-src="images/perritos3.jpg" alt="Image 3">
+            <img src="images/perritos4.jpg" data-src="images/perritos4.jpg" alt="Image 4">
+            <img src="images/perritos5.jpg" data-src="images/perritos5.jpg" alt="Image 5">
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="currentyear"></span> Your Name
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/lazyload.js" defer></script>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = "Last modification: " + document.lastModified;
+    </script>
+</body>
+</html>
