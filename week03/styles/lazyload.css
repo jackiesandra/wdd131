@@ -1,0 +1,39 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: rgb(34, 143, 220); /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: rgb(34, 143, 220); /* Color de fondo del pie de página */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Contenedor de imágenes */
+.image-container {
+    text-align: center;
+}
+
+/* Estilos para las imágenes */
+.image-container img {
+    opacity: 1; /* Configura la opacidad inicial en 0 */
+    transition: opacity 3s ease; /* Agrega una transición de 1 segundo */
+    margin: 10px; /* Añade un margen */
+}
+
+/* Estilos para imágenes cargadas */
+.image-container img.loaded {
+    opacity: 1; /* Cambia la opacidad a 1 para mostrar la imagen */
+}
