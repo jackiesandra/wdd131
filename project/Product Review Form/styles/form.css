@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: hwb(267 29% 22%);
+    color: #efef42;
+    padding: 10px 0;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgb(206, 184, 225);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+legend {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: hsl(0, 6%, 7%);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rating input[type="radio"]:checked + label {
+    color: rgb(0, 76, 255);
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.features label {
+    display: flex;
+    align-items: center;
+    margin-right: 60%;
+}
+
+.features input[type="checkbox"] {
+    margin-left: -7rem;
+}
+
+button[type="submit"] {
+    background-color: hwb(201 65% 23%);
+    color: #000000;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(226, 79%, 61%);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: hwb(267 29% 22%);
+    color: #efef42;
+    padding: 10px 0;
+    border-radius: 8px;
+    width: 45%;
+    margin: 20px auto 0 auto;
+}
+
+footer p {
+    margin: 5px 0;
+}
