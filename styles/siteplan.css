@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(48, 26%, 96%);
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: hsl(259, 79%, 65%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+   
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    color: hsl(0, 0%, 0%);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
