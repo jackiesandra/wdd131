@@ -5,45 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mayan Crafts Website Plan</title>
     <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Mayan Crafts Website Plan</h1>
+        <div class="background-image">
+            <img src="images/background.jpg" alt="background">
+        </div>
+        <div class="maya-image">
+            <img src="images/maya.png" alt="Artesanías Mayas" class="maya-image">
+        </div>
+        <nav>
+            <button type="button" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <ul id="menu" class="menu">
+                <li><a href="#" data-section="home">Home</a></li>
+                <li><a href="#" data-section="jewelry">Jewelry</a></li>
+                <li><a href="#" data-section="accessories">Accessories</a></li>
+                <li><a href="#" data-section="textiles">Textiles</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
+                <li><a href="#" data-section="cart" id="cart-icon"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="site-name">
-        <h2>Maya Crafts</h2>
-        <img src="images/maya.png" alt="Artesanías Mayas">
-        <p><strong>Welcome to Mayan Crafts</strong></p>
-        <p>This name represents a platform dedicated to showcasing authentic Mayan crafts, emphasizing the rich culture and traditions of the Mayan people in Honduras.</p>
-        <p>Optional domain availability: mayan-crafts.com</p>
-    </section>
-    <section id="site-purpose">
-        <h2>Site Purpose</h2>
-        <p>The site provides a platform for exploring and purchasing authentic Mayan crafts, including textiles, ceramics, and jewelry. It aims to preserve and celebrate the cultural heritage of the Mayan people by promoting their handmade products.</p>
-    </section>
-    <section id="scenarios">
-        <h2>Scenarios</h2>
-        <ul>
-            <li>What types of handmade crafts are available for purchase?</li>
-            <li>How can I learn about the artisans behind these crafts?</li>
-        </ul>
-    </section>
-    <section id="color-schema">
-        <h2>Color Schema</h2>
-        <p>Primary Color: hsl(0, 0%, 0% , #000 (used for headings and accents)</p>
-        <p>Secondary Color:hsl(259, 79%, 65% (used for background and highlights)</p>
-    </section>
-    <section id="typography">
-        <h2>Typography</h2>
-        <p>Main Font: Arial (used for body text)</p>
-        <p>Heading Font: Georgia (used for headings)</p>
-    </section>
-    <section id="wireframe">
-        <h2>Wireframe</h2>
-        <h3>Desktop View</h3>
-        <img src="images/large-view.png" alt="Wireframe for Desktop View">
-        <h3>Mobile View</h3>
-        <img src="images/mobile-view.png" alt="Wireframe for Mobile View">
-    </section>
+    <main>
+        <div id="home" class="content-section">
+            <h2>Welcome to Maya Crafts</h2>
+            <p>This name represents a platform dedicated to showcasing authentic Mayan crafts, emphasizing the rich culture and traditions of the Mayan people in Honduras.</p>
+        </div>
+        <div class="content-section">
+            <h2>Our Purpose</h2>
+            <p>The site provides a platform for exploring and purchasing authentic Mayan crafts, including textiles, ceramics, and jewelry. It aims to preserve and celebrate the cultural heritage of the Mayan people by promoting their handmade products.</p>
+        </div>
+        <div class="content-section">
+            <h2>Scenarios</h2>
+            <p>What types of handmade crafts are available for purchase?</p>
+            <p>We offer a variety of authentic Mayan crafts, including textiles, jewelry, and accessories. Each item is handmade by skilled artisans, ensuring unique and high-quality products that reflect the rich cultural heritage of the Mayan people in Honduras.</p>
+            <p>How can I learn about the artisans behind these crafts?</p>
+            <p>You can learn about the different crafts we offer on our website, such as hammocks, jewelry, and accessories, all handmade by our Mayan artisans. Each piece is embroidered and adorned with the creativity and vibrant colors that highlight the culture of our country.</p>
+        </div>
+        <div id="jewelry" class="content-section" style="display:none;">
+            <h2>Jewelry</h2>
+            <div class="product" data-product-id="1">
+                <h3>Mayan Necklace</h3>
+                <img src="images/jewelry1.jpg" alt="Necklace" loading="lazy">
+                <p>Price: $50</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="1">Remove from Cart</button>
+            </div>
+            <div class="product" data-product-id="2">
+                <h3>Mayan Jade Necklace</h3>
+                <img src="images/jewelry2.jpg" alt="Necklace" loading="lazy">
+                <p>Price: $100</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="2">Remove from Cart</button>
+            </div>
+            <div class="product" data-product-id="3">
+                <h3>Silver Earrings</h3>
+                <img src="images/jewelry3.jpg" alt="Earrings" loading="lazy">
+                <p>Price: $80</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="3">Remove from Cart</button>
+            </div>
+            <div class="product" data-product-id="4">
+                <h3>Mayan Bracelet</h3>
+                <img src="images/jewelry4.jpg" alt="Bracelet" loading="lazy">
+                <p>Price: $60</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="4">Remove from Cart</button>
+            </div>
+            <div class="product" data-product-id="5">
+                <h3>Gold Necklace Artisanal</h3>
+                <img src="images/jewelry5.jpeg" alt="Necklace" loading="lazy">
+                <p>Price: $500</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="5">Remove from Cart</button>
+            </div>
+        </div>
+        <div id="accessories" class="content-section" style="display:none;">
+            <h2>Accessories</h2>
+            <div class="product" data-product-id="6">
+                <h3>Mayan Hat</h3>
+                <img src="images/accesories1.jpg" alt="Hat" loading="lazy">
+                <p>Price: $80</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="6">Remove from Cart</button>
+            </div>
+            <div class="product" data-product-id="7">
+                <h3>Handmade Backpack</h3>
+                <img src="images/accesories2.jpg" alt="Backpack" loading="lazy">
+                <p>Price: $80</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="7">Remove from Cart</button>
+            </div>
+            <div class="product" data-product-id="8">
+                <h3>Headbands</h3>
+                <img src="images/accesories3.png" alt="Headbands" loading="lazy">
+                <p>Price: $50</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="8">Remove from Cart</button>
+            </div>
+            <div class="product" data-product-id="9">
+                <h3>Handmade Purse</h3>
+                <img src="images/accesories4.jpg" alt="Purse" loading="lazy">
+                <p>Price: $200</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="9">Remove from Cart</button>
+            </div>
+            <div class="product" data-product-id="10">
+                <h3>Reed Purse</h3>
+                <img src="images/accesories4.jpeg" alt="Purse" loading="lazy">
+                <p>Price: $250</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="10">Remove from Cart</button>
+            </div>
+        </div>
+        <div id="textiles" class="content-section" style="display:none;">
+            <h2>Textiles</h2>
+            <div class="product" data-product-id="11">
+                <h3>Mayan Dress</h3>
+                <img src="images/textiles1.jpg" alt="Dress" loading="lazy">
+                <p>Price: $110</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="11">Remove from Cart</button>
+            </div>
+            <div class="product" data-product-id="12">
+                <h3>Platform Sandals</h3>
+                <img src="images/textiles2.jpg" alt="Sandals" loading="lazy">
+                <p>Price: $50</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="12">Remove from Cart</button>
+            </div>
+            <div class="product" data-product-id="13">
+                <h3>Mayan Blouse</h3>
+                <img src="images/textiles3.jpg" alt="Blouse" loading="lazy">
+                <p>Price: $100</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="13">Remove from Cart</button>
+            </div>
+            <div class="product" data-product-id="14">
+                <h3>Handcrafted blouse</h3>
+                <img src="images/textiles4.jpg" alt="Scarf" loading="lazy">
+                <p>Price: $70</p>
+                <button type="button" class="add-to-cart">Add to Cart</button>
+                <button type="button" class="remove-from-cart" data-product-id="14">Remove from Cart</button>
+            </div>
+        </div>
+        <div id="contact" class="content-section" style="display:none;">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="contact-info">
+                <h3>Our Contact Information</h3>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@mayacrafts.com</p>
+                <p>Address: 123 Mayan Crafts Road, Tegucigalpa, Honduras</p>
+            </div>
+        </div>
+        <div id="cart" class="content-section" style="display:none;">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-empty-message">No items in cart.</p>
+            <div id="cart-total-container" style="display: none;">
+                <p>Total: $<span id="cart-total">0</span></p>
+                <button type="button" id="checkout-button">Checkout</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Maya Crafts. All rights reserved.⭐Sandra Jackeline Rodriguez⭐</p>
+        <p id="last-updated"></p>
+    </footer>
+    <script src="scripts/siteplan.js"></script>
 </body>
 </html>
