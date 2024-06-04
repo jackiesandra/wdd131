@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #004b6b;
+    color: white;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: none; /* Hide the menu by default */
+    flex-direction: column;
+    align-items: center;
+    background-color: #004b6b;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+#menu-btn {
+    display: block;
+    font-size: 24px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+#temple-container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#temple-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.temple-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.temple-card:hover {
+    transform: translateY(-10px);
+}
+
+.temple-card figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.temple-card img {
+    width: 60%;
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    display: block;
+}
+
+.temple-card figcaption {
+    padding: 20px;
+    text-align: center;
+}
+
+.temple-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.temple-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.temple-card p strong {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004b6b;
+    color: white;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: white;
+}
