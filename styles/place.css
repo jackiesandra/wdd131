@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #4A148C;
+    --secondary-color: #FFCA28;
+    --background-color: #FFFFFF;
+    --text-color: #333333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.data-container, .weather-container {
+    margin-top: 20px;
+}
+
+.data-list, .weather-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: none; /* Hide in mobile view */
+}
