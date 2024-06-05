@@ -13,7 +13,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(255, 255, 255, 0.6); /* Reduced opacity for more visible background image */
+    background: rgba(255, 255, 255, 0.1); /* Reduced opacity for more visible background image */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Ensure background image doesn't overflow */
 }
@@ -250,6 +250,6 @@ footer {
     background-color: hsl(300, 1%, 32%);
     color: #fff;
     text-align: center;
-    width: 100%; /* Ensure it takes full width */
-    box-sizing: border-box; /* Include padding in width */
+    width: 100%;
+    box-sizing: border-box; 
 }
