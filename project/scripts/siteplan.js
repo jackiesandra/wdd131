@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
+    const closeMenuBtn = document.getElementById('close-menu');
     const menu = document.getElementById('menu');
     const menuItems = document.querySelectorAll('nav ul li a');
     const sections = document.querySelectorAll('.content-section');
@@ -9,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
     menuToggle.addEventListener('click', function () {
         menu.classList.toggle('active');
         menu.scrollIntoView({behavior: "smooth"}); 
+    });
+
+    // Close menu
+    closeMenuBtn.addEventListener('click', function () {
+        menu.classList.remove('active');
+        menuToggle.scrollIntoView({behavior: "smooth"});
     });
 
     // Navigation
