@@ -9,30 +9,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Honduras</h1>
-        <img src="images/Honduras.jpg" alt="Principal image" srcset="images/guacamaya-small.jpg 600w, images/guacamaya-large.jpg 1200w" sizes="(max-width: 600px) 600px, 1200px">
-        <div class="data-container">
-            <h2 class="title">Data</h2>
-            <ul class="data-list">
-                <li>Area: 112 777 km²</li>
-                <li>Population: 10 445 395</li>
-                <li>Capital: Tegucigalpa</li>
-                <li>Language: Español</li>
-                <li>Currency: Lempira</li>
-                <li>TimeZone: UTC-6</li>
-                <li>Calling Code: 504</li>
-                <li>Internet TLD: .hn</li>
-            </ul>
+    </header>
+    <div class="container">
+        <div class="background-image">
+            <picture>
+                <img src="images/guacamaya.jpg" alt="principal image">
+            </picture>
         </div>
-        <div class="weather-container">
-            <h3>Weather</h3>
-            <ul class="weather-list">
-                <li>Temperature: 40 °C</li>
-                <li>Conditions: Partly sunny</li>
-                <li>Wind: SE 5 mph</li>
-                <li>Wind Chill: <span id="windChill">N/A</span></li>
-            </ul>
+        <div class="info-container">
+            <div class="data-container">
+                <h2 class="title">Data</h2>
+                <ul class="data-list">
+                    <li>Area: 112 777 km²</li>
+                    <li>Population: 10 445 395</li>
+                    <li>Capital: Tegucigalpa</li>
+                    <li>Language: Español</li>
+                    <li>Currency: Lempira</li>
+                    <li>TimeZone: UTC-6</li>
+                    <li>Calling Code: 504</li>
+                    <li>Internet TLD: .hn</li>
+                </ul>
+            </div>
+            <div class="weather-container">
+                <h2 class="title">
+                    Weather <img class="weather-icon" src="icons/weather.png" alt="weather icon">
+                </h2>
+                <ul class="weather-list">
+                    <li>Temperature: 40 °C</li>
+                    <li>Conditions: Partly sunny</li>
+                    <li>Wind: SE 5 mph</li>
+                    <li>Wind Chill: <span id="windChill">N/A</span></li>
+                </ul>
+            </div>
         </div>
     </div>
 
