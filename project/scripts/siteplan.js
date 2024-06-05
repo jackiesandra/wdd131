@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Toggle menu
     menuToggle.addEventListener('click', function () {
         menu.classList.toggle('active');
-        menu.scrollIntoView({behavior: "smooth"}); // Ensure menu is in view
+        menu.scrollIntoView({behavior: "smooth"}); 
     });
 
     // Navigation
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const index = cart.indexOf(productId);
         if (index > -1) {
             cart.splice(index, 1);
-            localStorage.setItem('cart', JSON.stringify(cart)); // Save updated cart to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart)); 
             updateCartView();
         }
     }

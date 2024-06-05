@@ -51,7 +51,7 @@ header {
 /* Navigation Styles */
 nav {
     position: relative;
-    z-index: 3; /* Ensure the nav is above other elements */
+    z-index: 3; 
     display: flex;
     align-items: center;
 }
@@ -102,14 +102,14 @@ nav a.active {
     font-size: 24px;
     cursor: pointer;
     color: rgb(65, 56, 240);
-    z-index: 4; /* Ensure the toggle button is above the menu */
+    z-index: 4; 
 }
 
 /* Responsive Menu */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start; /* Align items to the left */
+        align-items: flex-start;
         padding: 20px 10px;
         height: auto;
     }
@@ -152,9 +152,9 @@ nav a.active {
         width: 100%;
         align-items: center;
         position: absolute;
-        top: 60px; /* Adjust to ensure it appears below the toggle button */
+        top: 60px; 
         left: 0;
-        z-index: 5; /* Ensure the menu is above other elements */
+        z-index: 5; 
     }
 
     nav ul.active {
@@ -169,9 +169,9 @@ nav a.active {
     #menu-toggle {
         display: block;
         position:relative;
-        top: 10px; /* Adjust to position it correctly */
-        margin-left: 90%; /* Adjust to position it correctly */
-        z-index: 5; /* Ensure it is above the header */
+        top: 10px; 
+        margin-left: 90%; 
+        z-index: 5; 
     }
 }
 
