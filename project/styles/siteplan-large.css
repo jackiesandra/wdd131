@@ -13,6 +13,12 @@
         object-fit: cover;
     }
 
+    .maya-image {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 30%;
+    }
+    
     .maya-image img {
         width: 250px;
         height: 250px;
@@ -33,7 +39,7 @@
     }
 
     #menu-toggle {
-        display: none;
+        display: none; /* Hide the toggle button on large screens */
     }
 
     /* Main Content Styles */

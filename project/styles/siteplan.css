@@ -36,10 +36,8 @@ header {
 }
 
 .maya-image {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .maya-image img {
@@ -47,10 +45,13 @@ header {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
+    margin-top: 2%;
 }
 
 /* Navigation Styles */
 nav {
+    position: relative;
+    z-index: 3; /* Ensure the nav is above other elements */
     display: flex;
     align-items: center;
 }
@@ -101,14 +102,16 @@ nav a.active {
     font-size: 24px;
     cursor: pointer;
     color: rgb(65, 56, 240);
+    z-index: 4; /* Ensure the toggle button is above the menu */
 }
 
 /* Responsive Menu */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start; /* Align items to the left */
         padding: 20px 10px;
+        height: auto;
     }
 
     .background-image {
@@ -148,6 +151,10 @@ nav a.active {
         border-radius: 5px;
         width: 100%;
         align-items: center;
+        position: absolute;
+        top: 60px; /* Adjust to ensure it appears below the toggle button */
+        left: 0;
+        z-index: 5; /* Ensure the menu is above other elements */
     }
 
     nav ul.active {
@@ -161,8 +168,10 @@ nav a.active {
 
     #menu-toggle {
         display: block;
-        margin-top: 10px;
-        z-index: 2; /* Ensure the toggle button is above the menu */
+        position:relative;
+        top: 10px; /* Adjust to position it correctly */
+        margin-left: 90%; /* Adjust to position it correctly */
+        z-index: 5; /* Ensure it is above the header */
     }
 }
 

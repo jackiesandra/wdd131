@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Toggle menu
     menuToggle.addEventListener('click', function () {
         menu.classList.toggle('active');
+        menu.scrollIntoView({behavior: "smooth"}); // Ensure menu is in view
     });
 
     // Navigation
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Close the menu if in mobile view
             if (window.innerWidth <= 768) {
                 menu.classList.remove('active');
+                menuToggle.scrollIntoView({behavior: "smooth"}); // Scroll back to toggle button
             }
         });
     });
